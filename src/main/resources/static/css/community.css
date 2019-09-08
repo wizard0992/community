@@ -1,0 +1,13 @@
+body{
+    background-color: #B2B2B2;
+}
+
+.main{
+    background-color:floralwhite;
+    margin: 60px;
+}
+
+.btn-publish{
+    float: right;
+    margin-bottom: 15px;
+}
