@@ -1,10 +1,47 @@
 body {
-    background-color: #B2B2B2;
+    background-color: lightgray;
+   /* background-image: url("static/img/timg .jpg");*/
 }
 
 .main {
-    background-color: #f1f1f1;
-    margin: 20px;
+    background-color: #f7f7f7;
+    width: 1380px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1500px !important;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.red {
+    color: red !important;
+}
+
+.category .list > li {
+    float: left;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 10px 10px 0;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.media{
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 14px;
+    margin-left: 50px;
 }
 
 .btn-publish {
@@ -21,4 +58,12 @@ body {
     font-size: 12px;
     font-weight: normal;
     color: #999;
+}
+
+.page-control{
+    text-align: center;
+}
+
+.pagination{
+    pagination-top: 20px;
 }

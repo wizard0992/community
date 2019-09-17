@@ -37,8 +37,8 @@ public class PublishController {
             HttpServletRequest request,
             Model model) {
 
-        model.addAttribute("publish_title", publish_title);
-        model.addAttribute("description", description);
+            model.addAttribute("publish_title", publish_title);
+            model.addAttribute("description", description);
         model.addAttribute("tag", tag);
 
         if (publish_title == null || publish_title == "") {
