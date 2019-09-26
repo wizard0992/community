@@ -39,7 +39,7 @@ public class PublishController {
 
             model.addAttribute("publish_title", publish_title);
             model.addAttribute("description", description);
-        model.addAttribute("tag", tag);
+            model.addAttribute("tag", tag);
 
         if (publish_title == null || publish_title == "") {
             model.addAttribute("error", "标题不能为空");

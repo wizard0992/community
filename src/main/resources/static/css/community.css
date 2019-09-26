@@ -1,11 +1,11 @@
 body {
-    background-color: lightgray;
+   /* background-color: lightgray;*/
    /* background-image: url("static/img/timg .jpg");*/
 }
 
 .main {
     background-color: #f7f7f7;
-    width: 1380px;
+    margin-top: 50px;
 }
 
 .category {
@@ -65,4 +65,8 @@ body {
 
 .pagination{
     pagination-top: 20px;
+}
+
+.pfList{
+    margin-top: 13px;
 }
