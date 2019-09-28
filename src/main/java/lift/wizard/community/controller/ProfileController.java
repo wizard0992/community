@@ -2,7 +2,6 @@ package lift.wizard.community.controller;
 
 import lift.wizard.community.dao.User;
 import lift.wizard.community.dto.PaginationDTO;
-import lift.wizard.community.mapper.QuestionMapper;
 import lift.wizard.community.mapper.UserMapper;
 import lift.wizard.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +16,9 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class ProfileController {
-
     @Autowired
     private UserMapper userMapper;
+
 
     @Autowired
     private QuestionService questionService;
@@ -27,11 +26,11 @@ public class ProfileController {
     @GetMapping("/profile/{action}")
     public String profile(HttpServletRequest request,
                           @PathVariable(name = "action")String action,
+                          Model model,
                           @RequestParam(name = "page",defaultValue = "1") Integer page,
-                          @RequestParam(name = "size",defaultValue = "10") Integer size,
-                          Model model){
+                          @RequestParam(name = "size",defaultValue = "10") Integer size){
 
-        User user = null;
+        /*User user = null;
 
         Cookie[] cookies = request.getCookies();
         if (cookies != null && cookies.length != 0){
@@ -45,7 +44,9 @@ public class ProfileController {
                     break;
                 }
             }
-        }
+        }*/
+
+       User user = (User) request.getSession().getAttribute("user");
 
         if (user == null){
             return "redirect:/";
