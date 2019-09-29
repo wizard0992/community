@@ -37,7 +37,9 @@
                     </a>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading" th:text="${question.publishTitle}"></h4>
+                    <h4 class="media-heading">
+                        <a th:href="@{'/question/'+${question.id}}" th:text="${question.publishTitle}"></a>
+                    </h4>
                     <!--<span th:text="${question.description}"></span>-->
                     <span class="text-color-999"> <span th:text="${question.commentCount}"></span>个评论 •
                         <span th:text="${question.viewCount}"></span>次浏览 •
@@ -80,12 +82,14 @@
         <div class="col-lg-3 col-md-12 col-sm-12">
             <div class="list-group pfList">
                 <a href="/profile/pDatas" th:class="${section=='pDatas'}?'active list-group-item' : 'list-group-item'">个人资料</a>
-                <a href="/profile/questions" th:class="${section=='questions'}?'active list-group-item' : 'list-group-item'">个人问题</a>
+                <a href="/profile/questions"
+                   th:class="${section=='questions'}?'active list-group-item' : 'list-group-item'">个人问题</a>
                 <a href="/profile/repies" th:class="${section=='repies'}?'active list-group-item' : 'list-group-item'">
                     消息管理
                     <span class="badge">14</span>
                 </a>
-                <a href="/profile/follows" th:class="${section=='follows'}?'active list-group-item' : 'list-group-item'">关注列表</a>
+                <a href="/profile/follows"
+                   th:class="${section=='follows'}?'active list-group-item' : 'list-group-item'">关注列表</a>
             </div>
         </div>
     </div>
