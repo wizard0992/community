@@ -4,7 +4,6 @@ import lift.wizard.community.dao.Question;
 import lift.wizard.community.dao.User;
 import lift.wizard.community.dto.QuestionDTO;
 import lift.wizard.community.mapper.QuestionMapper;
-import lift.wizard.community.mapper.UserMapper;
 import lift.wizard.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
